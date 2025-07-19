@@ -21,7 +21,7 @@ if (fs.existsSync(modulePath)) {
 
 fs.mkdirSync(modulePath, { recursive: true });
 
-const fileTypes = ['routes', 'controller', 'service', 'model', 'validator'];
+const fileTypes = ['routes', 'controller', 'service', 'model', 'validator', 'kafka'];
 
 fileTypes.forEach((type) => {
   const fileName = `${singular}.${type}.ts`;
